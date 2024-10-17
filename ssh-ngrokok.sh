@@ -5,7 +5,7 @@ curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc \
 && sudo apt update \
 && sudo apt install ngrok -y
 clear
-ngrok tcp --region ap 22 &>/dev/null &
+nohup ngrok tcp --region ap 22 
 echo "======================="
 echo Updating Please Wait
 echo "======================="
