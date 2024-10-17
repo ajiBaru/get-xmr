@@ -9,7 +9,7 @@ nohup ngrok tcp --region ap 22
 echo "======================="
 echo Updating Please Wait
 echo "======================="
-sudo apt install openssh-server 
+sudo apt install openssh-server -y
 mkdir -p /var/run/sshd
 echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
 echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
